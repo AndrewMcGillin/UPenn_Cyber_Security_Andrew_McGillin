@@ -3,7 +3,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-https://github.com/AndrewMcGillin/UPenn_Cyber_Security_Andrew_McGillin/blob/14ecaffb2a2257cc57604637f922c9f0dfb87745/Diagrams/Project%201%20Diagram.drawio.png
+![image](https://user-images.githubusercontent.com/88856550/143951104-f08363dd-d3ba-474f-b72c-b62ba6514e2b.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
