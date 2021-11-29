@@ -79,8 +79,8 @@ The playbook implements the following tasks:
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
  
+![project 1 docker ps](https://user-images.githubusercontent.com/88856550/143959442-d4ccd8d9-21b7-4ade-8ef1-5736c9a395ad.PNG)
 
-![Kibana snip](https://user-images.githubusercontent.com/88856550/143950856-5af248c4-8db5-4cd5-8282-0be48b38e6a0.PNG)
 
 ### Target Machines & Beats
 
@@ -114,6 +114,8 @@ SSH into the control node and follow the steps below:
 
 
 - Run the playbook, and navigate to http://20.99.253.115:5601/app/kibana to check that the installation worked as expected.
+
+![Kibana snip](https://user-images.githubusercontent.com/88856550/143950856-5af248c4-8db5-4cd5-8282-0be48b38e6a0.PNG)
 
 -	The Filebeat configuration file is in the playbook, and needs to be copied to /etc/filebeat/filebeat.yml
 -	The hosts file needs to be updated with the IP addresses of your web servers and elk machine. Your YAML script will specify on which hosts the playbook will be executed.
