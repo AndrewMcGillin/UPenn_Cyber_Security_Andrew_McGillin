@@ -80,7 +80,7 @@ The following screenshot displays the result of running `docker ps` after succes
 
  
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![Kibana snip](https://user-images.githubusercontent.com/88856550/143950856-5af248c4-8db5-4cd5-8282-0be48b38e6a0.PNG)
 
 ### Target Machines & Beats
 
