@@ -1,0 +1,25 @@
+##When is it appropriate to use containers in cloud deployments, and what are the security benefits of doing so?
+
+##The increased security, efficiency, and portability that containerization offers, makes the usage of containers not only appropriate,
+ but necessary for the management of Virtual Network cloud deployments of any business with the goal of growing to scale. Containers
+ are a cost-effective way to automate the rapid deployment of applications and operating systems to virtual assets anywhere in the 
+ world.I gained firsthand experience working with containers while building an Azure Virtual Network in school. 
+
+##I employed two containers to automate the management of my network. An Ansible container was used to execute YAML playbook scripts to
+automate the provisioning of the servers on my network with the appropriate applications. I then deployed an ELK container to assist in the 
+security of the network. The Elk Stack aggregates, analyzes, and creates visualizations of all system and application logs. These 
+functions allow for faster troubleshooting and increased security analytics.
+##This was accomplished by creating an Ansible playbook that would create and run an ELK container on a network server. The playbook installed 
+the Docker engine along with the newest version of the ELK container.The playbook also mapped the necessary ports to interface with Elasticsearch,
+ Logstash, and Kibana. When the playbook was run successfully,a TCP connection was established through Port 5601 to the server designated to run 
+ the ELK stack.
+ ##I created a rule within my Network SecurityGroup to allow TCP traffic from the IP address of the computer used to manage the ELK stack and 
+ blocked all other access points. I verified the successful execution of the ELK container by the ability to access the Kibana app on my 
+ dedicated ELK server. 
+ ##Containerization is not necessary  to employ an ELK stack on a server(s). The manual provisioning of an ELK stack may not only be
+ acceptable but necessary for a company that is not prepared for the complexity and multi-level security considerations that containers 
+ present. However, any business that is attempting to scale will greatly benefit from automating these tasks using containers.
+ Manually provisioning networks is time consuming, creates overhead, and increased security risks. Containerization automates the process of 
+ deploying operating systems to servers and allows for applications to be pushed across networks with unmatched portability as your business grows.
+ Failure to automate the implementation of ELK stacks through containerization greatly increases the risk of incomplete log data and other 
+ unintended security and application issues. 
