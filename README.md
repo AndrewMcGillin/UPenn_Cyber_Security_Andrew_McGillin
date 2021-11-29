@@ -55,21 +55,15 @@ Machines within the network can only be accessed by Ansible Container (Hungry_No
 
 A summary of the access policies in place can be found in the table below.
 
-╔═══════════════════════════════════════════════════════════╗
-║ | Name     | Publicly Accessible | Allowed IP Addresses | ║
-╠═══════════════════════════════════════════════════════════╣
-║ |----------|---------------------|----------------------| ║
-╠═══════════════════════════════════════════════════════════╣
-║ | Jump Box | Yes                 | 108.16.254.189       | ║
-╠═══════════════════════════════════════════════════════════╣
-║ | Elk VM   | No                  | None                 | ║
-╠═══════════════════════════════════════════════════════════╣
-║ | Web-1    | No                  | None                 | ║
-╠═══════════════════════════════════════════════════════════╣
-║ | Web-2    | No                  | None                 | ║
-╠═══════════════════════════════════════════════════════════╣
-║ | Web-3    | No                  | None                 | ║
-╚═══════════════════════════════════════════════════════════╝
+
+ | Name     | Publicly Accessible | Allowed IP Addresses 
+
+ | Jump Box | Yes                 | 108.16.254.189       
+ | Elk VM   | No                  | None                 
+ | Web-1    | No                  | None                 
+ | Web-2    | No                  | None                 
+ | Web-3    | No                  | None                 
+
 
 ### Elk Configuration
 
