@@ -121,6 +121,9 @@ SSH into the control node and follow the steps below:
 -	The hosts file needs to be updated with the IP addresses of your web servers and elk machine. Your YAML script will specify on which hosts the playbook will be executed.
 -	navigate to http://20.99.253.115:5601/app/kibana to check that the installation worked as expected.
  
+![Project 1 Module Status screenshot](https://user-images.githubusercontent.com/88856550/143960713-c1377fa7-ee8b-4e04-972c-e09d05ebd242.PNG)
+![Filebeat Snip](https://user-images.githubusercontent.com/88856550/143960795-766f8e49-54e3-429a-bdad-ee7768c99b7f.PNG)
+
 
 The commands needed to run the Ansible configuration for the Elk-Server are:
 
