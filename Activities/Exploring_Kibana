@@ -1,0 +1,80 @@
+Instructions
+
+
+Add the sample web log data to Kibana.
+
+
+Answer the following questions:
+
+
+In the last 7 days, how many unique visitors were located in India?
+A: 244
+
+In the last 24 hours, of the visitors from China, how many were using Mac OSX?
+A:9
+
+In the last 2 days, what percentage of visitors received 404 errors? How about 503 errors?
+A: 404 = 100%
+   504 = 0%
+In the last 7 days, what country produced the majority of the traffic on the website?
+A: China
+
+Of the traffic that's coming from that country, what time of day had the highest amount of activity?
+A: 1:00 PM EST
+
+List all the types of downloaded files that have been identified for the last 7 days, along with a short description of each file type 
+(use Google if you aren't sure about a particular file type).
+A: 
+-gz  (GNU zip) compressed archive file
+-css (Cascading style sheet) formats the content of a web page
+-zip compressed archive file
+-deb (Debian) Unix archive used for software installation packages
+-rpm (Red Hat Package Manager) stores installation packages
+
+Now that you have a feel for the data, Let's dive a bit deeper. Look at the chart that shows Unique Visitors Vs. Average Bytes.
+
+Locate the time frame in the last 7 days with the most amount of bytes (activity).
+In your own words, is there anything that seems potentially strange about this activity?
+A: 6:00 AM 11-25-2021. Someone may be trying to play around before the Sysadmin logs in for the day.
+
+
+Filter the data by this event.
+
+What is the timestamp for this event?
+A: 16:58:15
+What kind of file was downloaded?
+A: gz file
+From what country did this activity originate?
+A:China
+What HTTP response codes were encountered by this visitor?
+HTTP 200 (Success)
+
+
+Switch to the Kibana Discover page to see more details about this activity.
+
+
+What is the source IP address of this activity?
+A: 1.145.31.121
+What are the geo coordinates of this activity?
+A:
+"lat": 28.28980556,
+"lon": -81.43708333
+What OS was the source machine running?
+win 8
+What is the full URL that was accessed?
+A: 	https://artifacts.elastic.co/downloads/kibana/kibana-6.3.2-linux-x86_64.tar.gz
+From what website did the visitor's traffic originate?
+A: http://www.elastic-elastic-elastic.com/success/aleksandr-serebrov
+
+
+Finish your investigation with a short overview of your insights.
+
+What do you think the user was doing?
+A: The perpetrator in question is a Full Stack Engineer at Elasticsearch, so it is likely that he was accessing the 
+file as part of his job.
+Was the file they downloaded malicious? If not, what is the file used for?
+A: The file is used to downloadaand install Kibana on a Linix machine. Not Malicious
+Is there anything that seems suspicious about this activity?
+The geo.source China, and the geo.dest Nigeria. I suspect that the use of VPN and proxy is the reason.
+Is any of the traffic you inspected potentially outside of compliance guidlines?
+If private VPN is being used by Elasticsearch employees, this may be a compliance issue.
